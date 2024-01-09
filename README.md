@@ -12,11 +12,18 @@ This project is a part of the Vision Algorithms for Mobile Robotics course, focu
 
 ## Objectives
 
-* **Implement feature detection, matching, and tracking.** The algorithm utilizes feature detection algorithms, such as SIFT or SURF, to identify and match keypoints across consecutive images. This process allows for the establishment of correspondences between points in different frames, which is essential for estimating camera motion.
+The primary objective of this project is to implement and evaluate a simple monocular visual odometry (VO) pipeline with key features, including:
 
-* **Estimate camera motion from a sequence of images.** Based on the matched features and their relative positions in the images, the algorithm estimates the 3D motion of the camera. This involves calculating the camera's translation and rotation between frames, enabling the reconstruction of the camera's path through the environment.
+* **Initialization of 3D Landmarks:** This involves the extraction of initial sets of 2D ↔ 3D correspondences from the first frames of a sequence and bootstrapping the initial camera poses and landmarks.
 
-* **Understand the principles of monocular visual odometry and its applications.** The project delves into the theoretical foundations of monocular visual odometry, exploring the underlying principles and challenges involved in estimating camera motion from a single perspective. This knowledge provides a deeper understanding of the algorithm's capabilities and limitations.
+* **Keypoint Tracking Between Frames:** The project requires tracking keypoints between two consecutive frames, which is crucial for maintaining the continuity and accuracy of the visual odometry pipeline.
+
+* **Pose Estimation Using Established 2D ↔ 3D Correspondences:** Accurate pose estimation is essential for understanding the movement and orientation of the camera in space over time.
+
+* **Triangulation of New Landmarks:** As the camera moves through the environment, it is necessary to continuously triangulate and add new landmarks to the model to ensure comprehensive environmental mapping.
+
+* **Use of Provided Datasets for Testing:** The project will utilize three specific datasets (parking, KITTI1, and Malaga2) for testing and validating the VO pipeline, each offering different challenges and scenarios.
+
 
 ## Installation
 
@@ -58,3 +65,14 @@ pip install -r requirements.txt
 
 The script will process the specified image sequence, displaying in subplots important information being processed in real time. After that, the script will display the estimated camera trajectory together with the ground truth, if available, to assess the accuracy of the pipeline. 
 
+## Results
+
+![image](https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524)
+
+Our visual odometry (VO) pipeline was assessed using the KITTI dataset, comparing the estimated trajectory against the ground truth. As observed in the provided image, there is a noticeable scale ambiguity problem, as well as some scale drift over time which leads to discrepancies between the estimated trajectory and the ground truth.
+
+### Scale Ambiguity
+The scale ambiguity issue arises from the monocular VO setup, where the absence of depth information from a single camera leads to an inability to recover the absolute scale of the scene. This has resulted in a trajectory that, while directionally similar to the ground truth, differs in the actual distance traveled.
+
+### Scale Drift
+Over time, the VO pipeline accumulates errors, evident from the divergence of the estimated trajectory from the ground truth. This drift is a cumulative effect of several factors, including error in feature tracking, camera motion estimation, and map updates.
