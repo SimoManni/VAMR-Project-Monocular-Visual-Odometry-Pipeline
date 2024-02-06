@@ -69,11 +69,12 @@ The script will process the specified image sequence, displaying in subplots imp
 Here are presented the results on the KITTI dataset, a popular dataset to benchmark the performance of the pipeline.
 
 <div align="center">
-  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f40bca5c-5327-49f5-b7cb-eecb4e066f21" alt="Image 1" width="400">
+  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/8aa7f6db-f95a-4cb1-b9f3-522b5682c587" alt="Image 1" width="600">
 </div>
 
+
 <div align="center">
-  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524" alt="Image 2" width="400">
+  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524" alt="Image 2" width="600">
 </div>
 
 Our visual odometry (VO) pipeline was assessed using the KITTI dataset, comparing the estimated trajectory against the ground truth. As observed in the provided image, there is a noticeable scale ambiguity problem, as well as some scale drift over time which leads to discrepancies between the estimated trajectory and the ground truth.
