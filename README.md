@@ -66,8 +66,15 @@ pip install -r requirements.txt
 The script will process the specified image sequence, displaying in subplots important information being processed in real time. After that, the script will display the estimated camera trajectory together with the ground truth, if available, to assess the accuracy of the pipeline. 
 
 ## Results
+Here are presented the results on the KITTI dataset, a popular dataset to benchmark the performance of the pipeline.
 
-![image](https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524)
+<div align="center">
+  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f40bca5c-5327-49f5-b7cb-eecb4e066f21" alt="Image 1" width="400">
+</div>
+
+<div align="center">
+  <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524" alt="Image 2" width="400">
+</div>
 
 Our visual odometry (VO) pipeline was assessed using the KITTI dataset, comparing the estimated trajectory against the ground truth. As observed in the provided image, there is a noticeable scale ambiguity problem, as well as some scale drift over time which leads to discrepancies between the estimated trajectory and the ground truth.
 
