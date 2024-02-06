@@ -75,18 +75,8 @@ First, the continuous operation of the pipeline is displayed by visualasing the 
   </div>
   <div>
     <video width="600" controls>
-      <source src="video_url_here" type="video/mp4">
-      Your browser does not support the video tag.
+      <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524" alt="Image 2" width="600">
     </video>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-  <div style="margin-right: 10px;">
-    <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524" alt="Image 2" width="600">
-  </div>
-  <div>
-    <!-- Place your second video here -->
   </div>
 </div>
 
