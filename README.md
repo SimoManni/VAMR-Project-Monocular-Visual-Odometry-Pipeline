@@ -74,6 +74,7 @@ First, the continuous operation of the pipeline is displayed by visualasing the 
 <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/ad6e6078-134f-4740-9ec7-d815c6aa48cc" alt="KittiGIF" style="max-width: 100%; display: block; margin: 0 auto;">
 
 
+
 Our visual odometry (VO) pipeline was assessed using the KITTI dataset, comparing the estimated trajectory against the ground truth. As observed in the provided image, there is a noticeable scale ambiguity problem, as well as some scale drift over time which leads to discrepancies between the estimated trajectory and the ground truth.
 
 ### Scale Ambiguity
