@@ -70,7 +70,6 @@ Here are presented the results on the KITTI dataset, a popular dataset to benchm
 First, the continuous operation of the pipeline is displayed by visualasing the processed images, together with the identified keypoints, a plot of the number of processed points and a top down view of the global trajecotory as well as the local trajectory together with the 3D landmarks. 
 
 <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/raw/main/assets/151052936/8aa7f6db-f95a-4cb1-b9f3-522b5682c587.png" alt="Image" style="max-width: 100%;">
-<img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/raw/main/assets/151052936/f349748e-d52f-4296-bd2d-9e549d79d524.gif" alt="GIF" style="max-width: 100%;">
 
 Our visual odometry (VO) pipeline was assessed using the KITTI dataset, comparing the estimated trajectory against the ground truth. As observed in the provided image, there is a noticeable scale ambiguity problem, as well as some scale drift over time which leads to discrepancies between the estimated trajectory and the ground truth.
 
