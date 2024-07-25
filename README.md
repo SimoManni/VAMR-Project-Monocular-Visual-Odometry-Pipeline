@@ -67,7 +67,7 @@ The script will process the specified image sequence, displaying in subplots imp
 
 ## Results
 Here are presented the results on the KITTI dataset, a popular dataset to benchmark the performance of the pipeline.
-First, the continuous operation of the pipeline is displayed by visualasing the processed images, together with the identified keypoints, a plot of the number of processed points and a top down view of the global trajecotory as well as the local trajectory together with the 3D landmarks. 
+First, the continuous operation of the pipeline is displayed by visualasing the processed images, together with the identified keypoints, a plot of the number of processed points and a top down view of the global trajectory as well as the local trajectory together with the 3D landmarks. 
 
 <img src="https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline/assets/151052936/013aa589-ba69-4c6c-a419-66c9d8ee4eb5" alt="Screenshot 2024-02-07 210533" style="max-width: 50%; display: block; margin: 0 auto;">
 
