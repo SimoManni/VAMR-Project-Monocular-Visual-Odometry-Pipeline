@@ -40,7 +40,7 @@ The primary objective of this project is to implement and evaluate a simple mono
 1. **Clone the repository:** Clone the project's repository using the following command:
 
 ```sh
-git clone https://github.com/JoseLavariega/VisualAlgosProject.git
+git clone https://github.com/SimoManni/VAMR-Project-Monocular-Visual-Odometry-Pipeline
 ```
 2. Install the required packages:
 ```sh
